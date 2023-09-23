@@ -56,8 +56,8 @@ a {
 }
 
 .logo {
-    display: inline-flex;
     position: relative;
+    display: inline-flex;
     font-size: 1rem;
 }
 
@@ -112,7 +112,7 @@ a {
     display: flex;
 }
 
-.action__login,
+.header-action__login,
 .navbar__link {
     padding: 8px 21px;
     font-size: 1.6rem;
@@ -121,7 +121,7 @@ a {
 }
 
 .navbar__link:hover,
-.action__login:hover,
+.header-action__login:hover,
 .navbar__link--active {
     color: #fff;
     text-shadow: 1px 0 0 currentColor;
@@ -139,7 +139,89 @@ a {
     background-color: #fff;
 }
 
-.action__signup {
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login {
+    margin-right: 7px;
+}
+
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
+}
+
+/* =============================== Hero =============================== */
+.hero {
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__heading {
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    color: #C9D2DA;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #fff;
+}
+
+.hero__phone:hover {
+    cursor: pointer;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.hero__img:first-child {
+    position: relative;
+    margin-right: -6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    border-radius: 0 6px 6px 0;
 }
