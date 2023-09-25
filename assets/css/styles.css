@@ -386,6 +386,51 @@ a {
     color: #2e80ce;
 }
 
+/* =============================== Feature =============================== */
+.feature {
+    margin-top: 75px;
+    padding: 85px 0;
+}
+
+.feature__body {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.feature__media {
+    width: 48%;
+}
+
+.feature__images {
+    position: relative;
+    padding:0 58px 121px 0;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0px 14px 28px 0px #00000012;
+}
+
+.feature__img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+}
+
+.feature__content {
+    width: 40.17%;
+}
+
+.feature__cta {
+    margin-top: 38px;
+}
 
 
 
