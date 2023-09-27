@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #10375C;
+    --background-color: #2E80CE;
 }
 
 html {
@@ -34,13 +35,13 @@ a {
     height: var(--height);
     padding: 0 20px;
     border-radius: 99px;
-    border: 1px solid #2E80CE;
+    border: 1px solid var(--background-color);
     font-size: 1.6rem;
     font-weight: 400;
     text-align: center;
     line-height: var(--height);
     color: #fff;
-    background-color: #2E80CE;
+    background-color: var(--background-color);
 }
 
 .btn:hover {
@@ -95,7 +96,7 @@ a {
 .logo__circle::before {
     width: 3em;
     height: 3em;
-    background-color: #2E80CE;
+    background-color: var(--background-color);
 }
 
 .logo__circle::after {
@@ -215,11 +216,13 @@ a {
     margin-left: 38px;
     font-size: 1.8rem;
     line-height: 1.67;
+    transition: .25s;
     color: #fff;
 }
 
 .hero__phone:hover {
     cursor: pointer;
+    transform: scale(0.9);
 }
 
 .hero__media {
@@ -296,7 +299,7 @@ a {
 }
 
 .service-item:hover .service-item__icon {
-    background-color: #2E80CE;
+    background-color: var(--background-color);
     color: #fff;
     box-shadow: 0px 8px 16px 0px #289BDE26;
 }
@@ -356,7 +359,7 @@ a {
 
 .work-item:hover {
     cursor: pointer;
-    border-color: #2E80CE;
+    border-color: var(--background-color);
     translate: 0 -16px;
     transition: 0.25s;
 }
@@ -383,7 +386,7 @@ a {
     margin-top: 18px;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #2e80ce;
+    color: var(--background-color);
 }
 
 /* =============================== Feature =============================== */
@@ -511,8 +514,8 @@ a {
 .member__control-btn:hover {
     cursor: pointer;
     color: #fff;
-    border-color: #2E80CE;
-    background-color: #2E80CE;
+    border-color: var(--background-color);
+    background-color: var(--background-color);
     transition: .25s;
 }
 
@@ -520,3 +523,52 @@ a {
     rotate: 180deg;
 }
 
+/* =============================== Install =============================== */
+.install {
+    margin-top: 180px;
+}
+
+.install__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 0 70px;
+    background-color: var(--background-color);
+}
+
+.install__img {
+    display: block;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top:-95px;
+}
+
+.install__content {
+    max-width: 586px;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__desc {
+    width: 586px;
+}
+
+.install__row {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
+}
+
+.install__btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
